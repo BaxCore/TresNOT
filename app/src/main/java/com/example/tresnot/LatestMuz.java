@@ -15,7 +15,7 @@ MediaPlayer plyM;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_latest_muz);
-        btnplay = findViewById(R.id.button2);
+        btnplay = findViewById(R.id.toplay);
         btnplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
