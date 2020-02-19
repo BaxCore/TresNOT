@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class LatestMuz extends AppCompatActivity {
-Button btnplay;
+Button btnplay , player ;
 MediaPlayer plyM;
 
     @Override
@@ -16,7 +16,13 @@ MediaPlayer plyM;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_latest_muz);
         btnplay = findViewById(R.id.toplay);
-        btnplay.setOnClickListener(new View.OnClickListener() {
+        player= findViewById(R.id.btnpause);
+        player.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (plyM != null && plyM.isPlaying()) {
+                   plyM.stop();}
+                btnplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 plyM=MediaPlayer.create(getApplicationContext(),R.raw.tresnot);
@@ -24,4 +30,5 @@ MediaPlayer plyM;
             }
         });
     }
-}
+});
+    }     }
