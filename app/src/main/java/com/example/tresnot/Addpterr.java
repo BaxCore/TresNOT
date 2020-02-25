@@ -41,7 +41,7 @@ public class Addpterr extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         TextView textView;
         public Tems(@NonNull View itemView) {
             super(itemView);
-            textView= itemView.findViewById(R.id.ClistCons);
+            textView= itemView.findViewById(R.id.alltypes);
         }
     }
 }
