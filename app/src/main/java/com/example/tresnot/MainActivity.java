@@ -1,9 +1,12 @@
 package com.example.tresnot;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,11 +19,19 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
-
+    RecyclerView recyclerView;
+    String[] types={"upercomputer", "Mainframe", "Server Computer", "Workstation Computer",
+            "Personal Computer or PC", "Microcontroller","Smartphone"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        recyclerView=findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new Addpterr(this, types));
+
+
     }
     public void sendMessage(View view){
 
@@ -50,5 +61,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 
 }

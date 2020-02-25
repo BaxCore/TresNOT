@@ -20,13 +20,24 @@
 
     <TextView
         android:id="@+id/TheCode"
-        android:layout_width="336dp"
-        android:layout_height="476dp"
+        android:layout_width="259dp"
+        android:layout_height="448dp"
         android:text="TextView"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CodeSee"
         app:layout_constraintVertical_bias="0.152" />
+
+    <Button
+        android:id="@+id/ListCons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="C Concepts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TheCode" />
 </androidx.constraintlayout.widget.ConstraintLayout>

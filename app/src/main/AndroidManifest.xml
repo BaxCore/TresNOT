@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LocationM"></activity>
-        <activity android:name=".LatestMuz" />
+        <activity android:name=".Listing"></activity>
+        <activity android:name=".SplashMyApp" />
+        <activity android:name=".LocationM" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".DisplayMessageActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Addpterr">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
