@@ -19,7 +19,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView messageView =(TextView)findViewById(R.id.messageTextView);
         messageView.setText(message);
 
-
+/*
         Button Cconsepts=(Button)findViewById(R.id.toComp);
         Cconsepts.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +27,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 Intent intent=new Intent(DisplayMessageActivity.this, Addpterr.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
     public void onClose(View view) {
         super.finish();

@@ -29,6 +29,7 @@ public class LocationM extends AppCompatActivity {
             }
         });
 
+
         textView=findViewById(R.id.TheCode);
         buttonCode=findViewById(R.id.CodeSee);
 
