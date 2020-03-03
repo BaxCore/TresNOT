@@ -1,6 +1,7 @@
 package com.example.tresnot;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,15 +20,15 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView messageView =(TextView)findViewById(R.id.messageTextView);
         messageView.setText(message);
 
-/*
+
         Button Cconsepts=(Button)findViewById(R.id.toComp);
         Cconsepts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(DisplayMessageActivity.this, Addpterr.class);
+                Intent intent=new Intent(DisplayMessageActivity.this, RecyclerClass.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
     public void onClose(View view) {
         super.finish();
