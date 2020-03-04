@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/audio" android:title="Audio"/>
-    <item android:id="@+id/video" android:title="Video"/>
-
+    <item android:id="@+id/audio" android:title="Audio"/>
+    <item android:id="@+id/video" android:title="The C Code"/>
+    <item android:id="@+id/CallMe" android:title="Call"/>
+    <item android:id="@+id/SendEmail" android:title="Mail Us"/>
 </menu>
