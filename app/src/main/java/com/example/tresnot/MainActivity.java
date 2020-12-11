@@ -14,20 +14,16 @@ import android.widget.EditText;
 import android.widget.Toolbar;
 
 public class MainActivity extends DaMenu {
-    private Toolbar toolbar;
+
     RecyclerView recyclerView;
 
     String[] types={"upercomputer", "Mainframe", "Server Computer", "Workstation Computer",
             "Personal Computer or PC", "Microcontroller","Smartphone"};
-    private Toolbar supportActionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        toolbar = findViewById(R.id.toolba);
-        setSupportActionBar(toolbar);
 
 
      /*   recyclerView=findViewById(R.id.recyclerView);
@@ -38,8 +34,6 @@ public class MainActivity extends DaMenu {
     }
     public void sendMessage(View view){
 
-
-
         EditText message = (EditText)findViewById(R.id.message);
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         intent.putExtra("MESSAGE", message.getText().toString());
@@ -48,7 +42,5 @@ public class MainActivity extends DaMenu {
     }
 
 
-    public void setSupportActionBar(Toolbar supportActionBar) {
-        this.supportActionBar = supportActionBar;
-    }
+
 }
