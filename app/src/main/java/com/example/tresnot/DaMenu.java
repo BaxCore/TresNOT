@@ -34,7 +34,7 @@ public class DaMenu extends AppCompatActivity {
                 return true;
 
             case R.id.Alarm:
-                startActivity(new Intent(this, CountD.class));
+                startActivity(new Intent(this, testmehere.class));
                 return true;
 
             case R.id.SendEmail  :
