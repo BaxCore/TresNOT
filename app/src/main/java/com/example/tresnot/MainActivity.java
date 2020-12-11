@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.ccod:
                 startActivity(new Intent(this, LocationM.class));
                 return true;
+            case R.id.Alarm:
+                startActivity(new Intent(this, ));
             case R.id.SendEmail  :
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setData(Uri.parse("mailto:"));

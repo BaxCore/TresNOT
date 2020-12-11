@@ -9,22 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecyclerClass"></activity>
+        <activity
+            android:name=".CountDown"
+            android:label="@string/title_activity_count_down"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".RecyclerClass" />
         <activity android:name=".Listing" />
-        <activity android:name=".SplashMyApp" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".SplashMyApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-            </activity>
-        
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".LocationM" />
         <activity android:name=".LatestMuz" />
         <activity android:name=".DisplayMessageActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
