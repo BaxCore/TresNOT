@@ -21,6 +21,10 @@ public class DaMenu extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
+            case R.id.hom:
+                startActivity(new Intent(this, MainActivity.class));
+                return true;
+
             case R.id.audio:
                 startActivity(new Intent(this, LatestMuz.class));
                 return true;
