@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LatestMuz extends AppCompatActivity {
+public class LatestMuz extends DaMenu {
     MediaPlayer Mediaplayer;
     Button starter,stoper;
     @Override

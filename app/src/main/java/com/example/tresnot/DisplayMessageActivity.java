@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class DisplayMessageActivity extends AppCompatActivity {
+public class DisplayMessageActivity extends DaMenu {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         messageView.setText(message);
 
     Button clz = findViewById(R.id.closeButton);
-        
+
 
         Button Cconsepts=(Button)findViewById(R.id.toComp);
         Cconsepts.setOnClickListener(new View.OnClickListener() {

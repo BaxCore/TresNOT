@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import java.util.ArrayList;
 
-public class RecyclerClass extends AppCompatActivity implements Addpterr.ItemClickListener {
+public class RecyclerClass extends DaMenu implements Addpterr.ItemClickListener {
     RecyclerView recyclerView;
     Addpterr adapter;
 

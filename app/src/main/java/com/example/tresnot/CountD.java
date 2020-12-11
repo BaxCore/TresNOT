@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CountD extends AppCompatActivity {
+public class CountD extends DaMenu {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

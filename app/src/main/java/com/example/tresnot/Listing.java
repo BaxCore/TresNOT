@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Listing extends AppCompatActivity {
+public class Listing extends DaMenu {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

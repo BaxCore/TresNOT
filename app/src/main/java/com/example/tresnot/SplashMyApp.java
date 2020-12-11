@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class SplashMyApp extends AppCompatActivity {
+public class SplashMyApp extends DaMenu {
    // public static int timercreen = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

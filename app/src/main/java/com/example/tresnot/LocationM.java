@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class LocationM extends AppCompatActivity {
+public class LocationM extends DaMenu {
     InputStream Ccode;
     TextView textView;
     Button buttonCode;
