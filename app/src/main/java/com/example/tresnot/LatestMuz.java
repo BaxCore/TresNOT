@@ -8,3 +8,27 @@ import android.view.View;
 import android.widget.Button;
 
 public class LatestMuz extends AppCompatActivity {
+    MediaPlayer Mediaplayer;
+    Button starter,stoper;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_latest_muz);
+        starter = findViewById(R.id.toplay);
+        stoper = findViewById(R.id.btnpause);
+        stoper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Mediaplayer != null && Mediaplayer.isPlaying()) {
+                    Mediaplayer.stop();}
+            }
+        });
+        starter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Mediaplayer= MediaPlayer.create(getApplicationContext(),R.raw.tresnot);
+                Mediaplayer.start();
+            }
+        });
+    }
+}
