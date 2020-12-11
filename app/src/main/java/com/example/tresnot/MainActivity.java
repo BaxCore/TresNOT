@@ -50,11 +50,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.audio:
                 startActivity(new Intent(this, LatestMuz.class));
                 return true;
+
             case R.id.ccod:
                 startActivity(new Intent(this, LocationM.class));
                 return true;
+
             case R.id.Alarm:
-                startActivity(new Intent(this, ));
+                startActivity(new Intent(this, CountD.class));
+                return true;
+
             case R.id.SendEmail  :
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setData(Uri.parse("mailto:"));
@@ -68,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.CallMe:
                 Intent Ints = new Intent(Intent.ACTION_DIAL);
-                Ints.setData(Uri.parse("tel:0706944635"));
+                Ints.setData(Uri.parse("tel:0754923852"));
              /*   if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    Activity#requestPermissions

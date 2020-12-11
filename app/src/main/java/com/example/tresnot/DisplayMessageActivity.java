@@ -20,6 +20,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView messageView =(TextView)findViewById(R.id.messageTextView);
         messageView.setText(message);
 
+    Button clz = findViewById(R.id.closeButton);
+        
 
         Button Cconsepts=(Button)findViewById(R.id.toComp);
         Cconsepts.setOnClickListener(new View.OnClickListener() {
