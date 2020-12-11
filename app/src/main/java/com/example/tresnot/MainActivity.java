@@ -1,23 +1,16 @@
 package com.example.tresnot;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -54,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.audio:
                 startActivity(new Intent(this, LatestMuz.class));
                 return true;
-            case R.id.video:
+            case R.id.ccod:
                 startActivity(new Intent(this, LocationM.class));
                 return true;
-            case R.id.SendEmail:
+            case R.id.SendEmail  :
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setData(Uri.parse("mailto:"));
                 String whoRec[] = {"bvicxbax@gmail.com, markruhinda47@gmail.com"};
@@ -88,6 +81,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
 
 }
