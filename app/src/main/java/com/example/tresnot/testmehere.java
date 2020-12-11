@@ -37,7 +37,7 @@ public class testmehere extends AppCompatActivity {
         alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis() + (z* 1000),pendingIntent);
 
         //make a toast using a class Toast
-        Toast.makeText(this," Your Alarm is set in"+  z +"seconds",Toast.LENGTH_LONG).show();
+        Toast.makeText(this," Your Alarm is set in "+  z +"seconds",Toast.LENGTH_LONG).show();
 
     }
 }
