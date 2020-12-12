@@ -26,7 +26,7 @@ public class LatestMuz extends DaMenu {
         starter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Mediaplayer= MediaPlayer.create(getApplicationContext(),R.raw.tresnot);
+                Mediaplayer= MediaPlayer.create(getApplicationContext(),R.raw.script);
                 Mediaplayer.start();
             }
         });
