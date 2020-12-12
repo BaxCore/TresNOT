@@ -25,14 +25,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Close"
+        android:text="Save"
         android:textSize="25dp"
+        android:onClick="SaveCod"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/messageTextView"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/messageTextView"
         app:layout_constraintTop_toBottomOf="@+id/messageTextView"
-        app:layout_constraintVertical_bias="0.91" />
+        app:layout_constraintVertical_bias="0.91"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/toComp"
@@ -46,4 +48,5 @@
         app:layout_constraintStart_toEndOf="@+id/closeButton"
         app:layout_constraintTop_toTopOf="@+id/closeButton"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,4 +36,9 @@ public class DisplayMessageActivity extends DaMenu {
         super.finish();
 
     }
+
+    public void SaveCod(View view) {
+
+
+    }
 }

@@ -39,6 +39,7 @@ public class MainActivity extends DaMenu {
         intent.putExtra("MESSAGE", message.getText().toString());
         startActivity(intent);
         message.setText("");
+
     }
 
 
