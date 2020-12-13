@@ -3,18 +3,26 @@ package com.example.tresnot;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.media.Ringtone;
 import android.net.Uri;
+import android.os.BatteryManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
 public class MainActivity extends DaMenu {
 
+    TextView tView;
+    Ringtone rtone;
     RecyclerView recyclerView;
 
     String[] types={"upercomputer", "Mainframe", "Server Computer", "Workstation Computer",
@@ -30,6 +38,17 @@ public class MainActivity extends DaMenu {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new Addpterr(this, types));
 */
+        tView = findViewById(R.id.stopRing);
+        BroadcastReceiver BLevel = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                Integer BtryL = intent.getIntExtra(BatteryManager.EXTRA_LEVEL,0);
+                tView.setText(BtryL.toString() + "%");
+
+            }
+        };
+        registerReceiver(BLevel, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+
 
     }
     public void sendMessage(View view){
