@@ -38,12 +38,15 @@ public class MainActivity extends DaMenu {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new Addpterr(this, types));
 */
-        tView = findViewById(R.id.stopRing);
+        tView = findViewById(R.id.Batry);
         BroadcastReceiver BLevel = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
                 Integer BtryL = intent.getIntExtra(BatteryManager.EXTRA_LEVEL,0);
                 tView.setText(BtryL.toString() + "%");
+                if (BtryL == 100) {
+                    rtone.play();
+                }
 
             }
         };
@@ -62,5 +65,7 @@ public class MainActivity extends DaMenu {
     }
 
 
+    public void stpAlm(View view) {
 
+    }
 }
