@@ -44,7 +44,7 @@ public class MainActivity extends DaMenu {
             public void onReceive(Context context, Intent intent) {
                 Integer BtryL = intent.getIntExtra(BatteryManager.EXTRA_LEVEL,0);
                 tView.setText(BtryL.toString() + "%");
-                if (BtryL == 100) {
+                if (BtryL < 98) {
                     rtone.play();
                 }
 
