@@ -8,4 +8,7 @@
     <string name="enter_message">enter message</string>
     <string name="send">Send</string>
     <string name="stop">Stop</string>
+    <string name="camera">Camera</string>
+    <string name="set_seconds">Set Seconds</string>
+    <string name="start">Start</string>
 </resources>

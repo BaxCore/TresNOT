@@ -14,9 +14,9 @@
         android:layout_marginTop="150dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="680dp"
-        android:text="Set Seconds"
+        android:text="@string/set_seconds"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.272"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/countd"
@@ -45,7 +46,7 @@
         android:layout_marginTop="140dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="250dp"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
