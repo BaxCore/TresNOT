@@ -9,12 +9,12 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="365dp"
+        android:layout_height="275dp"
         android:text="Stop the TresPass Mechanism"
         android:textAlignment="center"
-        android:textSize="50dp"
         android:textColor="@android:color/holo_green_light"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
