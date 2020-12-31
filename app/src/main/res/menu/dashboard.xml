@@ -13,6 +13,10 @@
     <item
         android:id="@+id/ccod"
         android:title="The C Code" />
+
+    <item android:title="@string/places"
+        android:id="@+id/placez"/>
+
     <item android:id="@+id/CallMe" android:title="Call"/>
     <item android:id="@+id/SendEmail" android:title="Mail Us"/>
 
