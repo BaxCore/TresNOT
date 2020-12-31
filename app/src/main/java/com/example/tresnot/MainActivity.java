@@ -41,17 +41,17 @@ public class MainActivity extends DaMenu {
 */
         tView = findViewById(R.id.Batry);
         rtone = RingtoneManager.getRingtone(getApplicationContext(), RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
-        BroadcastReceiver BtryLevel = new BroadcastReceiver() {
+        BroadcastReceiver Btry = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
-                Integer BtryL = intent.getIntExtra(BatteryManager.EXTRA_LEVEL,0);
-                tView.setText(BtryL.toString() + "%");
-                if (BtryL > 98) {
+                Integer lbatry = intent.getIntExtra(BatteryManager.EXTRA_LEVEL,0);
+                tView.setText(lbatry.toString() + "%");
+                if (lbatry > 98) {
                     rtone.play();
                 }
             }
         };
-        registerReceiver(BtryLevel, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        registerReceiver(Btry, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
 
     }
     public void sendMessage(View view){

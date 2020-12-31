@@ -2,39 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tresnot">
 
-    /*
-    permission for the vibration when of the phone when battery is above 98%
-    this is an indicator for the user to know that the phone is
-    2% to full charge and still a default ringtone is played
-    */
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
-    /*
-    on the main activity a user is requested to enter a word which will act as a key
-    to remind that user not to trespass
-    this word is saved and the user can access this word by navigating to the phone storage
-    this permission if granted by the user, any word or words will be stored to the phone
-    and can be accessed ant time in the default phone storage
-    */
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-
-    /*
-    used an intent to access the camera as after taking a picture,
-    it is displayed to that activity for the user's preview
-    this permission is require for to use the camera component
-    */
-    <uses-permission android:name="android.permission.CAMERA"/>
     <application
-
         android:allowBackup="true"
         android:icon="@drawable/newlchi"
         android:label="@string/app_name"
         android:roundIcon="@drawable/lchi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".testmehere"></activity>
-        <activity android:name=".CountD" />
+        <activity android:name=".SavePlace"></activity>
+        <activity android:name=".testmehere" />
         <activity android:name=".RecyclerClass" />
         <activity android:name=".Listing" />
         <activity android:name=".SplashMyApp">
