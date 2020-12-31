@@ -12,10 +12,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class SavePlace extends AppCompatActivity {
+public class SavePlace extends DaMenu {
     EditText plcV;
     Button save;
-    ListView listplaces;
+    ListView listplace;
 
         DbHelper dbHelper;
         ArrayList arrayList;
@@ -29,12 +29,12 @@ public class SavePlace extends AppCompatActivity {
 
         plcV = findViewById(R.id.loct);
         save = findViewById(R.id.addPlace);
-        listplaces = findViewById(R.id.listplaces);
+        listplace = findViewById(R.id.listplaces);
 
         final DbHelper dbHelper= new DbHelper(SavePlace.this);
         arrayList = dbHelper.Viewing();
         arrayAdapter = new ArrayAdapter(SavePlace.this, android.R.layout.activity_list_item, arrayList);
-        listplaces.setAdapter(arrayAdapter);
+        listplace.setAdapter(arrayAdapter);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,8 +47,8 @@ public class SavePlace extends AppCompatActivity {
                     arrayList.clear();
                     arrayList.addAll(dbHelper.Viewing());
                     arrayAdapter.notifyDataSetChanged();
-                    listplaces.invalidateViews();
-                    listplaces.refreshDrawableState();
+                    listplace.invalidateViews();
+                    listplace.refreshDrawableState();
 
 
 

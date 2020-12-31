@@ -37,6 +37,10 @@ public class DaMenu extends AppCompatActivity {
                 startActivity(new Intent(this, testmehere.class));
                 return true;
 
+            case R.id.placez:
+                startActivity(new Intent(this, SavePlace.class));
+                return true;
+
             case R.id.SendEmail  :
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setData(Uri.parse("mailto:"));
