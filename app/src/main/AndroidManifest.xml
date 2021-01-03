@@ -22,12 +22,12 @@ a user can take a picture and after, this picture is saved on the internal
         android:roundIcon="@drawable/lchi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exam"></activity>
+        <activity android:name=".SplashMyApp"></activity>
         <activity android:name=".SavePlace" />
         <activity android:name=".testmehere" />
         <activity android:name=".RecyclerClass" />
         <activity android:name=".Listing" /> <!-- a simple splashscreen is displayed when an app is opened the first time -->
-        <activity android:name=".SplashMyApp">
+        <activity android:name=".exam">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
