@@ -1,7 +1,5 @@
 package com.example.tresnot;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -29,7 +27,7 @@ public class SavePlace extends DaMenu {
 
         plcV = findViewById(R.id.loct);
         save = findViewById(R.id.addPlace);
-        listplace = findViewById(R.id.listplaces);
+        listplace = findViewById(R.id.listofplaces);
 
         final DbHelper dbHelper= new DbHelper(SavePlace.this);
         arrayList = dbHelper.Viewing();
@@ -42,15 +40,13 @@ public class SavePlace extends DaMenu {
                 String newplace = plcV.getText().toString();
                 if(!newplace.isEmpty()){
                     if(dbHelper.adding(newplace)){
-                    plcV.setText("");
-                    Toast.makeText(getApplicationContext(), "Place Added", Toast.LENGTH_LONG).show();
-                    arrayList.clear();
-                    arrayList.addAll(dbHelper.Viewing());
-                    arrayAdapter.notifyDataSetChanged();
-                    listplace.invalidateViews();
-                    listplace.refreshDrawableState();
-
-
+                        plcV.setText("");
+                        Toast.makeText(getApplicationContext(), "Place Added", Toast.LENGTH_LONG).show();
+                        arrayList.clear();
+                        arrayList.addAll(dbHelper.Viewing());
+                        arrayAdapter.notifyDataSetChanged();
+                        listplace.invalidateViews();
+                        listplace.refreshDrawableState();
 
                     }
                 }

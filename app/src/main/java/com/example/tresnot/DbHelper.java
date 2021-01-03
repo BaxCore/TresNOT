@@ -29,6 +29,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase dataDb, int oldVersion, int newVersion) {
+        
 
         dataDb.execSQL("drop table if exists "+TBname);
         onCreate(dataDb);
@@ -36,10 +37,10 @@ public class DbHelper extends SQLiteOpenHelper {
     }
     public boolean adding(String plc){
         SQLiteDatabase sqLiteDatabase= this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("places", plc);
+        ContentValues contentV = new ContentValues();
+        contentV.put("placez", plc);
 
-        sqLiteDatabase.insert(TBname, null, contentValues);
+        sqLiteDatabase.insert(TBname, null, contentV);
         return true;
 
     }
@@ -52,8 +53,8 @@ public class DbHelper extends SQLiteOpenHelper {
         Cursor cursor = sqLiteDatabase.rawQuery("select * from "+TBname, null);
         cursor.moveToFirst();
 
-        if(!cursor.isAfterLast()){
-            arrayList.add(cursor.getString(cursor.getColumnIndex("plc")));
+        while(!cursor.isAfterLast()){
+            arrayList.add(cursor.getString(cursor.getColumnIndex("placez")));
             cursor.moveToNext();
         }
         return arrayList;

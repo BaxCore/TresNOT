@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tresnot">
-
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+    request for a phone vibration as the battery level is above 98% and a ringtone is played
+    here there is a background process that is keeps checking for that battery level
+    which is also displayed on the main activity
+    -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- a word that is entered by the user is saved on phone storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- retrieving of the stored information on the phone storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+a user can take a picture and after, this picture is saved on the internal
+    storage and can be retrieved as seen on the app activity
+    -->
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -13,10 +22,11 @@
         android:roundIcon="@drawable/lchi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SavePlace"></activity>
+        <activity android:name=".exam"></activity>
+        <activity android:name=".SavePlace" />
         <activity android:name=".testmehere" />
         <activity android:name=".RecyclerClass" />
-        <activity android:name=".Listing" />
+        <activity android:name=".Listing" /> <!-- a simple splashscreen is displayed when an app is opened the first time -->
         <activity android:name=".SplashMyApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

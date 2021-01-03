@@ -2,14 +2,16 @@
     <string name="app_name">TresNot</string>
     <string name="Myhulk">Trespass is an area of criminal law or tort law broadly divided into three groups: trespass to the person, trespass to chattels and trespass to land. </string>
     <string name="reminder" translatable="false">Type a word to remind you not to Trespass</string>
-    <string name="battery">Battery</string>
-    <string name="enter_a_message_here">enter a message here</string>
-    <string name="trespass">No Trespassing</string>
-    <string name="enter_message">enter message</string>
-    <string name="send">Send</string>
-    <string name="stop">Stop</string>
-    <string name="camera">Camera</string>
-    <string name="set_seconds">Set Seconds</string>
-    <string name="start">Start</string>
-    <string name="places">Places</string>
+    <string name="battery" translatable="false">Battery</string>
+    <string name="enter_a_message_here" translatable="false">enter a message here</string>
+    <string name="trespass" translatable="false">No Trespassing</string>
+    <string name="enter_message" translatable="false">enter message</string>
+    <string name="send" translatable="false">Send</string>
+    <string name="stop" translatable="false">Stop</string>
+    <string name="camera" translatable="false">Camera</string>
+    <string name="set_seconds" translatable="false">Set Seconds</string>
+    <string name="start" translatable="false">Start</string>
+    <string name="places" translatable="false">Places</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
 </resources>
